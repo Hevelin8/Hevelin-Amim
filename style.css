@@ -1,0 +1,16 @@
+.card{
+    border: 2px solid black;
+    display: flex;
+    gap: 20px; 
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;  
+
+}
+.dog{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}

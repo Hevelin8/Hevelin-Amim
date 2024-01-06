@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('./imagens/WhatsApp\ Image\ 2023-11-23\ at\ 07.18.10.jpeg');
+    background-size: cover;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+.banner>h1 {
+    font-size: 44px;
+}
+
+.banner header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.banner header span {
+    color: blue;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 26px;
+}
+
+.banner p {
+
+    width: 60%;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: wheat;
+    background-color: blue;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    display: flex;
+    padding: 60px 80px;
+    gap: 40px;
+    align-items: center;
+}
+
+.icon {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+.card p {
+
+    color: gray;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.card-blue {
+    background-color: blue;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+.card-blue p {
+    color: white;
+}
+
+.card-blue button {
+    background-color: white;
+    color: blue;
+}
+
+.card-blue img {
+    padding: 10px;
+    border: 2px solid white;
+}

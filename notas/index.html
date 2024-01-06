@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar bg-dark border-bottom border-body text-white p-2" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <h1 class="fs-2">Minhas Notas</h1>
+        <i class="bi bi-plus fs-3" role="button" data-bs-toggle="modal" data-bs-target="#notemodal"></i>
+    </nav>
+
+    <section class="container d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+        <div class="card text-bg-dark mt-3" data-bs-theme="dark" style="width: 18rem;">
+            <div class="card-body" role="button" data-bs-toggle="modal" data-bs-target="#notemodal">
+                <div class=" d-flex justify-content-between">
+
+                <h5 class="card-title">Card title</h5>
+                <i class="bi bi-clipboard"></i>
+            </div>
+
+
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nam ad adipisci,
+                recusandae possimus praesentium veniam consequatur repellat suscipit. Molestiae nesciunt, reiciendis
+                minus laudantium quidem inventore ipsam dignissimos autem accusantium.</p>
+        </div>
+        </div>
+        <div class="card text-bg-dark mt-3" data-bs-theme="dark" style="width: 18rem;">
+            <div class="card-body" role="button" data-bs-toggle="modal" data-bs-target="#notemodal">
+                <div class="d-flex justify-content-between">
+
+                    <h5 class="card-title">Card title</h5>
+                    <i class="bi bi-clipboard"></i>
+                </div>
+
+
+
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint consequatur neque
+                    officiis hic, cum itaque obcaecati inventore! Veritatis aspernatur reiciendis dignissimos deserunt,
+                    nam quia dolorem animi quaerat expedita quam. Error..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div data-bs-theme="dark" class="modal fade text-white" id="notemodal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Salvar Notas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <div class="mb-3">
+                        <label for="noteTitle" class="form-label">Título da Nota</label>
+                        <input type="text" class="form-control" id="noteTitle">
+                    </div>
+                    <div class="mb-3">
+                        <label for="noteContent" class="form-label">Digite o Conteúdo da Nota</label>
+                        <textarea style="height: 180px; resize:none;" class="form-control" id="noteContent"
+                            rows="3"></textarea>
+                    </div>
+
+
+
+                </div>
+                <div class="p-2 d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary">Salvar Notas</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
